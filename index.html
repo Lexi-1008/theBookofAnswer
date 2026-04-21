@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>告诉我吧！银八老师</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1 style="color: white; font-size: 40px;">告诉我吧！银八老师</h1>
+      <p style="color: white; font-size: 20px;">提出你的问题，银八老师会给你答案。</p>
+    </header>
+
+    <section id="view-intro" class="view active" aria-labelledby="intro-title">
+      <div class="intro-media">
+        <div class="intro-top-row">
+          <img src="resources/img/xin.png" alt="新" class="intro-icon">
+          <img src="resources/img/yin.png" alt="银" class="intro-icon">
+          <img src="resources/img/le.png" alt="乐" class="intro-icon">
+        </div>
+        <img src="resources/img/cover.png" alt="封面" class="intro-cover">
+      </div>
+      <div class="intro-action">
+        <button type="button" id="go-to-ask" class="intro-button" >告诉我吧 银八老师！</button>
+      </div>
+    </section>
+
+    <section id="view-ask" class="view" aria-labelledby="ask-title">
+      <form id="question-form">
+        <div class="ask-input-panel">
+          <textarea id="question-input" class="question-input" placeholder="输入你的问题" maxlength="200" required></textarea>
+        </div>
+        <div class="ask-submit-panel">
+          <div class="button-row ask-button-row">
+            <button type="submit" class="ask-submit-button">告诉我吧！银八老师</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="view-result" class="view" aria-labelledby="result-title">
+      <p id="result-question" class="question-text"></p>
+      <img id="result-image" class="result-image" src="" alt="答案配图" hidden>
+      <div class="result-action-panel">
+        <button type="button" id="ask-again" class="ask-submit-button">再问一个</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
